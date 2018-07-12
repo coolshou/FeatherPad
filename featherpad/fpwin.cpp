@@ -57,7 +57,10 @@ void BusyMaker::makeBusy() {
 }
 
 
-FPwin::FPwin (QWidget *parent):QMainWindow (parent), dummyWidget (nullptr), ui (new Ui::FPwin)
+FPwin::FPwin (QWidget *parent):
+    QMainWindow (parent),
+    dummyWidget (nullptr),
+    ui(new Ui::FPwin)
 {
     ui->setupUi (this);
 

@@ -60,8 +60,9 @@ bool Delegate::eventFilter (QObject *object, QEvent *event)
     return QStyledItemDelegate::eventFilter (object, event);
 }
 /*************************/
-PrefDialog::PrefDialog (const QHash<QString, QString> &defaultShortcuts, QWidget *parent)
-    : QDialog (parent), ui (new Ui::PrefDialog)
+PrefDialog::PrefDialog (const QHash<QString, QString> &defaultShortcuts, QWidget *parent):
+    QDialog (parent),
+    ui(new Ui::PrefDialog)
 {
     ui->setupUi (this);
     parent_ = parent;
