@@ -58,7 +58,8 @@ HEADERS += singleton.h \
            warningbar.h \
            utils.h \
            sidepane.h \
-           svgicons.h
+           svgicons.h \
+    version.h
 
 FORMS += fp.ui \
          predDialog.ui \
